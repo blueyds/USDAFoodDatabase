@@ -5,9 +5,7 @@
 //  Created by Craig Nunemaker on 8/9/25.
 
 import Foundation
-import SwiftData
 
-@Model
 public final class  USDAAbridgedFood:Decodable{
     public var fdcId: Int
     public var name: String

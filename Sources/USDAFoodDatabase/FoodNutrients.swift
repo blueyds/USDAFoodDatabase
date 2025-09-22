@@ -1,7 +1,7 @@
 import Foundation
 
 
-public struct USDAFoodNutrient: Decodable, Identifiable {
+public struct USDAFoodNutrient: Decodable{
     public var _id: Int?
     public var amount: Double?
     public var dataPoints: Int?
@@ -11,10 +11,6 @@ public struct USDAFoodNutrient: Decodable, Identifiable {
     public var type: String?
     public var nutrient: USDANutrient?
     public var foodNutrientDerivation: USDAFoodNutrientDerivation?
-    
-    public var id: String{
-        nutrient?.number ?? UUID().uuidString
-    }
     
     
     public func amountPer(grams: Double)->Double{
