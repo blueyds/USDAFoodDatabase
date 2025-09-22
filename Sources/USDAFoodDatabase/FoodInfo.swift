@@ -15,7 +15,7 @@ public struct USDAApiClient {
 		self.apiKey = apiKey
 	}
 
-	@available(macOS 12.0, *)
+	@available(macOS 12.0, iOS 15.0)
 	public func getFood(fdcID: Int) async -> USDAFoodData? {
 		var result: USDAFoodData? = nil
 		if let url = getURL(fdcID: fdcID),
